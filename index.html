@@ -9,42 +9,48 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav" id="siteNav">
     <div class="nav-inner">
       <a href="#top" class="brand">Naiara Gordillo</a>
       <nav>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#proyectos" data-nav>Proyectos</a>
+        <a href="#experiencia" data-nav>Experiencia</a>
+        <a href="#habilidades" data-nav>Habilidades</a>
+        <a href="#contacto" data-nav>Contacto</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">Hola, soy</p>
-      <h1>Naiara Ohiane Gordillo Ferreiro</h1>
-      <p class="role">Ingeniera Multimedia · Programadora Full Stack (PHP, Python &amp; IA)</p>
-      <p class="pitch">
+      <div class="hero-blob blob-1" aria-hidden="true"></div>
+      <div class="hero-blob blob-2" aria-hidden="true"></div>
+      <p class="eyebrow in-1">Hola, soy</p>
+      <h1 class="in-2">Naiara Ohiane Gordillo Ferreiro</h1>
+      <p class="role in-3">Ingeniera Multimedia · Programadora Full Stack (PHP, Python &amp; IA)</p>
+      <p class="pitch in-4">
         Máster en Tecnologías Web, Computación en la Nube y Aplicaciones Móviles (Universitat de València),
         con base en el Grado en Ingeniería Multimedia. Desarrollo aplicaciones web y móviles de principio a fin,
         desde el modelado de datos hasta interfaces de usuario, con experiencia en proyectos de investigación
         aplicada y software educativo.
       </p>
-      <div class="cta">
+      <div class="cta in-5">
         <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
         <a class="btn" href="cv-naiara-gordillo.pdf" target="_blank" rel="noopener">Descargar CV</a>
         <a class="btn" href="https://github.com/ohianee" target="_blank" rel="noopener">GitHub</a>
       </div>
+      <a class="scroll-cue" href="#proyectos" aria-label="Desplázate a proyectos"><span></span></a>
     </section>
 
     <section id="proyectos" class="section">
-      <h2>Proyectos destacados</h2>
+      <h2 class="reveal">Proyectos destacados</h2>
       <div class="cards">
 
-        <article class="card">
-          <img class="card-thumb" src="assets/tfm-dei-report.jpg" alt="Captura del informe DEI Report: clima de comunicación" loading="lazy" />
+        <article class="card reveal">
           <div class="card-head">
             <h3>DEI Report</h3>
             <span class="tag">TFM</span>
@@ -64,8 +70,7 @@
           </div>
         </article>
 
-        <article class="card">
-          <img class="card-thumb" src="assets/tfg-adn.jpg" alt="Captura de resultados de Word Sequence Analysis: gráfica de distancias entre genomas" loading="lazy" />
+        <article class="card reveal">
           <div class="card-head">
             <h3>Análisis de secuencias de ADN</h3>
             <span class="tag">TFG</span>
@@ -84,7 +89,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
           <div class="card-head">
             <h3>ChemiInspection</h3>
             <span class="tag">IRTIC</span>
@@ -108,26 +113,26 @@
     </section>
 
     <section id="experiencia" class="section">
-      <h2>Experiencia y formación</h2>
+      <h2 class="reveal">Experiencia y formación</h2>
       <div class="timeline">
-        <div class="tl-item">
+        <div class="tl-item reveal">
           <span class="tl-date">Abr. 2026 – Jul. 2026</span>
           <h3>Técnico de Investigación Medio</h3>
           <p class="tl-org">IRTIC – ChemiNova (ChemiInspection)</p>
           <p>Desarrollo de aplicación en Unity para dispositivos móviles y tablets, diseño de interfaces con UI Toolkit y adaptación a flujos de trabajo en proyectos de gran escala.</p>
         </div>
-        <div class="tl-item">
+        <div class="tl-item reveal">
           <span class="tl-date">Sept. 2025 – Sept. 2026</span>
           <h3>Máster en Tecnologías Web, Computación en la Nube y Aplicaciones Móviles</h3>
           <p class="tl-org">Universitat de València</p>
         </div>
-        <div class="tl-item">
+        <div class="tl-item reveal">
           <span class="tl-date">Oct. 2023 – Dic. 2023</span>
           <h3>Prácticas</h3>
           <p class="tl-org">Science Fantasy S.L.</p>
           <p>Desarrollo de aplicación móvil con conexión Bluetooth a Arduino y elaboración de guía docente para un juego educativo desarrollado en Scratch.</p>
         </div>
-        <div class="tl-item">
+        <div class="tl-item reveal">
           <span class="tl-date">Sept. 2020 – Nov. 2024</span>
           <h3>Grado en Ingeniería Multimedia</h3>
           <p class="tl-org">Universitat de València</p>
@@ -136,29 +141,29 @@
     </section>
 
     <section id="habilidades" class="section">
-      <h2>Habilidades</h2>
+      <h2 class="reveal">Habilidades</h2>
       <div class="skills">
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Backend</h3>
           <p>PHP, Python, Django, Java, Spring Boot, FastAPI</p>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Frontend</h3>
           <p>HTML5, CSS, JavaScript, Bootstrap, React, Angular</p>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Bases de datos</h3>
           <p>SQL, MySQL, PostgreSQL, MariaDB, MongoDB, Cassandra</p>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Cloud &amp; DevOps</h3>
           <p>Docker, Kubernetes, Git, GitHub, CI/CD, Testing</p>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Apps móviles</h3>
           <p>Kotlin, Android Studio</p>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h3>Videojuegos &amp; XR</h3>
           <p>Unity (C#)</p>
         </div>
@@ -166,9 +171,9 @@
     </section>
 
     <section id="contacto" class="section contact">
-      <h2>Contacto</h2>
-      <p>¿Hablamos de una oportunidad o colaboración?</p>
-      <div class="cta">
+      <h2 class="reveal">Contacto</h2>
+      <p class="reveal">¿Hablamos de una oportunidad o colaboración?</p>
+      <div class="cta reveal">
         <a class="btn btn-primary" href="mailto:naiara24ohiane11@gmail.com">naiara24ohiane11@gmail.com</a>
         <a class="btn" href="https://github.com/ohianee" target="_blank" rel="noopener">github.com/ohianee</a>
       </div>
@@ -179,8 +184,94 @@
     <p>© <span id="year"></span> Naiara Ohiane Gordillo Ferreiro</p>
   </footer>
 
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll progress bar
+    const progressBar = document.getElementById('progressBar');
+    const toTopBtn = document.getElementById('toTop');
+    const nav = document.getElementById('siteNav');
+
+    function onScroll() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = pct + '%';
+
+      nav.classList.toggle('scrolled', scrollTop > 8);
+      toTopBtn.classList.toggle('visible', scrollTop > 480);
+    }
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Scroll reveal animations
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = (i % 6) * 60 + 'ms';
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach((el) => io.observe(el));
+    } else {
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+
+    // Active nav link on scroll
+    const sections = ['proyectos', 'experiencia', 'habilidades', 'contacto']
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    const navLinks = document.querySelectorAll('[data-nav]');
+    if ('IntersectionObserver' in window && sections.length) {
+      const navIo = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const link = document.querySelector(`[data-nav][href="#${entry.target.id}"]`);
+          if (!link) return;
+          if (entry.isIntersecting) {
+            navLinks.forEach((l) => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      sections.forEach((s) => navIo.observe(s));
+    }
+
+    // Card tilt interaction
+    document.querySelectorAll('.card').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(700px) rotateX(${(-y * 6).toFixed(2)}deg) rotateY(${(x * 8).toFixed(2)}deg) translateY(-4px)`;
+        card.style.setProperty('--spot-x', `${(x + 0.5) * 100}%`);
+        card.style.setProperty('--spot-y', `${(y + 0.5) * 100}%`);
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+
+    // Cursor glow (desktop/pointer only)
+    const glow = document.getElementById('cursorGlow');
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.addEventListener('mousemove', (e) => {
+        glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        glow.style.opacity = '1';
+      });
+      document.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
+    } else if (glow) {
+      glow.style.display = 'none';
+    }
   </script>
 </body>
 </html>
