@@ -118,6 +118,16 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
   flex-direction: column;
   gap: 10px;
 }
+.card-thumb {
+  display: block;
+  width: calc(100% + 44px);
+  height: 170px;
+  object-fit: cover;
+  object-position: top;
+  margin: -22px -22px 14px -22px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  border-bottom: 1px solid var(--border);
+}
 .card-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .card-head h3 { margin: 0; font-size: 1.1rem; }
 .tag {
