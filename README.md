@@ -5,7 +5,7 @@ Código fuente del portfolio personal de Naiara Ohiane Gordillo Ferreiro, public
 Sitio estático (HTML + CSS, sin build step) con:
 
 - Perfil profesional y habilidades técnicas.
-- Proyectos destacados: [DEI Report](https://github.com/ohianee/dei-report) (TFM), [análisis de secuencias de ADN](https://github.com/ohianee/analisis-adn) (TFG) y ChemiInspection (IRTIC).
+- Proyectos destacados: [DEI Report](https://github.com/ohianee/dei-report) (TFM), [análisis de secuencias de ADN](https://github.com/ohianee/wordsequenceanalysis) (TFG) y ChemiInspection (IRTIC).
 - Experiencia y formación.
 - CV descargable y enlace de contacto.
 
